@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-9 mx-auto">
+                <div class="inputDiv">
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputEmail4">First Name:</label>
+                            <input type="text" class="form-control" id="fname" placeholder="First name">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputPassword4">Last Name:</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Last name">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputPassword4">Age:</label>
+                            <input type="number" class="form-control" id="age">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputPassword4">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email  ">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button class="btn btn-primary btn-block btn-lg">
+                            Add Student
+                            <i class="fas fa-user-plus ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-9 mx-auto">
+                <table id="userTable" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Delete</th>
+                            <th>Add Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Add Score Div -->
+    <div class="modal fade" id="scoreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-12">
+                        <label for="inputPassword4">Score:</label>
+                        <input type="number" class="form-control" id="score">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="closeModalBtn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveModal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/GroupStudent.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
